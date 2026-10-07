@@ -1,0 +1,72 @@
+<svg class="visually-hidden" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-arrow" viewBox="0 0 20 20" fill="none">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M15.893 10.06H4.226M10 4.166l-5.893 5.892L10 15.952" />
+  </symbol>
+  <symbol id="icon-bag" viewBox="0 0 20 20" fill="none">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"
+      d="M13.33 7.84V5a3.33 3.33 0 0 0-6.66 0v2.84m-.03 10.5h6.72c1.57 0 2.36 0 2.93-.32.5-.28.89-.73 1.1-1.26.24-.6.14-1.38-.06-2.94l-.62-4.77c-.17-1.24-.25-1.85-.54-2.32a2.5 2.5 0 0 0-1.07-.94c-.5-.23-1.12-.23-2.36-.23H7.26c-1.24 0-1.86 0-2.36.23q-.67.31-1.07.94c-.3.47-.37 1.08-.53 2.32l-.63 4.77c-.2 1.56-.3 2.34-.06 2.94.21.53.6.98 1.1 1.25.57.32 1.36.32 2.93.32" />
+  </symbol>
+  <symbol id="icon-catalog" viewBox="0 0 20 20" fill="none">
+    <path stroke-width="1.4" opacity=".9"
+      d="M1.67 3.33c0-.92.74-1.66 1.66-1.66h3.34c.92 0 1.66.74 1.66 1.66v3.34c0 .92-.74 1.66-1.66 1.66H3.33c-.92 0-1.66-.74-1.66-1.66zM1.67 13.33c0-.92.74-1.66 1.66-1.66h3.34c.92 0 1.66.74 1.66 1.66v3.34c0 .92-.74 1.66-1.66 1.66H3.33c-.92 0-1.66-.74-1.66-1.66zM11.67 3.33c0-.92.74-1.66 1.66-1.66h3.34c.92 0 1.66.74 1.66 1.66v3.34c0 .92-.74 1.66-1.66 1.66h-3.34c-.92 0-1.66-.74-1.66-1.66zM11.67 13.33c0-.92.74-1.66 1.66-1.66h3.34c.92 0 1.66.74 1.66 1.66v3.34c0 .92-.74 1.66-1.66 1.66h-3.34c-.92 0-1.66-.74-1.66-1.66z" />
+  </symbol>
+  <symbol id="icon-chevron" viewBox="0 0 20 20" fill="none">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M8.33 5.83 12.5 10l-4.17 4.17" />
+  </symbol>
+  <symbol id="icon-close" viewBox="0 0 12 12" fill="none">
+    <path stroke-linecap="round" stroke-width="1.4" d="M3.5 3.5 6 6m0 0 2.5 2.5M6 6l2.5-2.5M6 6 3.5 8.5" />
+  </symbol>
+  <symbol id="icon-compare" viewBox="0 0 16 16">
+    <circle fill="none" cx="6.25" cy="6.65" r="4.65" stroke-width="1.4" />
+    <circle fill="none" cx="9.75" cy="10.15" r="4.65" stroke-width="1.4" />
+    <path stroke="none" d="M9.75 5.5q.54 0 1.04.11a4.67 4.67 0 0 1-5.58 5.58 4.67 4.67 0 0 1 4.54-5.7" />
+  </symbol>
+  <symbol id="icon-filter" viewBox="0 0 20 20" fill="none">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M5 10h10M2.5 5h15m-10 10h5" />
+  </symbol>
+  <symbol id="icon-heart" viewBox="0 0 16 16" stroke="none">
+    <path
+      d="M8 14q-.66-.57-1.43-1.2C4.74 11.32 2.7 9.65 1.8 7.64a5 5 0 0 1-.47-2.04A3.6 3.6 0 0 1 5 2a4 4 0 0 1 3 1.33q.35-.39.78-.67A4 4 0 0 1 11 2a3.6 3.6 0 0 1 3.67 3.6q-.02 1.06-.47 2.04c-.9 2-2.95 3.68-4.76 5.16Q8.65 13.44 8 14M5 3.33c-.62 0-1.22.23-1.67.66-.43.43-.67 1-.66 1.61q0 .78.34 1.49.65 1.3 1.7 2.31c.66.67 1.42 1.31 2.08 1.85l.55.46.12.1.54.44v-.01h.02l.02-.02.03-.02.01-.01h.01l.44-.37.12-.1.55-.45c.66-.54 1.42-1.19 2.08-1.86a8 8 0 0 0 1.7-2.31q.35-.71.35-1.5c0-.6-.23-1.18-.66-1.6A2.4 2.4 0 0 0 11 3.33c-.76 0-1.48.31-2 .88L8 5.37 7 4.2a2.7 2.7 0 0 0-2-.88" />
+  </symbol>
+  <symbol id="icon-max" viewBox="0 0 20 20" stroke="none">
+    <path fill="url(#max-linear-gradient)" d="M15.006 0H4.994A4.994 4.994 0 0 0 0 4.994v10.012A4.994 4.994 0 0 0 4.994 20h10.012A4.994 4.994 0 0 0 20 15.006V4.994A4.994 4.994 0 0 0 15.006 0" />
+    <path fill="url(#max-radial-gradient)" d="M15.006 0H4.994A4.994 4.994 0 0 0 0 4.994v10.012A4.994 4.994 0 0 0 4.994 20h10.012A4.994 4.994 0 0 0 20 15.006V4.994A4.994 4.994 0 0 0 15.006 0" />
+    <path fill="#fff" fill-rule="evenodd" clip-rule="evenodd"
+      d="M10.164 17.567c-1.5 0-2.197-.22-3.409-1.095-.766.985-3.194 1.755-3.3.438 0-.99-.218-1.825-.467-2.738-.295-1.124-.631-2.376-.631-4.19 0-4.333 3.555-7.592 7.767-7.592 4.216 0 7.519 3.42 7.519 7.632a7.52 7.52 0 0 1-7.479 7.545m.062-11.432c-2.051-.106-3.65 1.314-4.004 3.54-.292 1.844.227 4.088.668 4.205.212.051.745-.38 1.077-.712.55.38 1.189.608 1.854.661a3.905 3.905 0 0 0 4.084-3.639 3.905 3.905 0 0 0-3.679-4.051z" />
+  </symbol>
+  <symbol id="icon-phone" viewBox="0 0 20 20">
+    <path stroke="none" fill-rule="evenodd"
+      d="M13.77 18c-1.15-.04-4.42-.5-7.85-3.92s-3.87-6.7-3.91-7.85C1.94 4.47 3.29 2.76 4.85 2.1A1.2 1.2 0 0 1 6 2.22c1.28.94 2.17 2.35 2.93 3.46a1.2 1.2 0 0 1-.2 1.6L7.15 8.42a.4.4 0 0 0-.11.5c.35.64.98 1.6 1.7 2.32s1.73 1.4 2.42 1.79a.4.4 0 0 0 .51-.13l1.02-1.55a1.2 1.2 0 0 1 1.65-.27c1.12.78 2.44 1.65 3.4 2.89a1.2 1.2 0 0 1 .15 1.19c-.67 1.56-2.36 2.9-4.13 2.83"
+      clip-rule="evenodd" />
+    <path fill="none" stroke-linecap="round" stroke-width="1.4" d="M10 1a9 9 0 0 1 9 9m-8-5a4 4 0 0 1 4 4" />
+  </symbol>
+  <symbol id="icon-search" viewBox="0 0 20 20" fill="none">
+    <path stroke-width="1.4" d="m13.75 13.75 3.75 3.75" />
+    <circle cx="9.17" cy="9.17" r="6.67" stroke-width="1.4" />
+  </symbol>
+  <symbol id="icon-sort" viewBox="0 0 24 24" fill="none">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M4 10.81h7.2M4 6h9.6M4 15.62h7.2m6.11-7.21v9.05m-2.68-2.15L17.31 18 20 15.3" />
+  </symbol>
+  <symbol id="icon-swap" viewBox="0 0 16 16" fill="none">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M5.11 2.667v10.608m5.78.058V2.726m-3.311 7.957-2.469 2.65-2.469-2.65M13.36 5.317l-2.469-2.65-2.469 2.65" />
+  </symbol>
+  <symbol id="icon-telegram" viewBox="0 0 20 20" stroke="none">
+    <path fill="url(#telegram-linear-gradient)" fill-rule="evenodd" clip-rule="evenodd"
+      d="M20 10c0 5.523-4.477 10-10 10S0 15.523 0 10 4.478 0 10 0s10 4.478 10 10m-9.642-2.617Q8.9 7.989 4.527 9.894q-.711.283-.744.553c-.039.305.343.425.861.587l.22.07c.51.166 1.197.36 1.554.368q.485.01 1.085-.4 4.085-2.76 4.217-2.789c.063-.014.15-.032.207.02.059.052.053.15.047.177-.038.16-1.533 1.552-2.308 2.272-.242.224-.413.383-.448.42q-.119.12-.235.232c-.475.457-.83.8.02 1.36.409.27.735.492 1.061.713.356.243.711.485 1.171.786q.176.117.338.234c.414.296.786.56 1.246.519.267-.025.543-.276.683-1.025.331-1.772.983-5.608 1.134-7.19a1.7 1.7 0 0 0-.017-.394.42.42 0 0 0-.143-.27c-.12-.098-.304-.119-.388-.117-.375.007-.952.208-3.73 1.363" />
+  </symbol>
+  <defs>
+    <linearGradient id="max-linear-gradient" x1="2.357" x2="20" y1="15.211" y2="10" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4cf" />
+      <stop offset=".662" stop-color="#53e" />
+      <stop offset="1" stop-color="#93d" />
+    </linearGradient>
+    <radialGradient id="max-radial-gradient" cx="0" cy="0" r="1" gradientTransform="matrix(15 19 -8 6 -.476 -8.784)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00f" />
+      <stop offset="1" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="telegram-linear-gradient" x1="15.833" x2="4.583" y1="1.667" y2="18.333" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#33aae0" />
+      <stop offset="1" stop-color="#2097d4" />
+    </linearGradient>
+  </defs>
+</svg>

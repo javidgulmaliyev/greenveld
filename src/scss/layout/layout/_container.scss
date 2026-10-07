@@ -1,0 +1,5 @@
+@use "../../variables/variables";
+
+.container {
+  padding-inline: max((100% - var(--container-inner-width, #{variables.$inner + px})) / 2, #{variables.$padding + px});
+}
