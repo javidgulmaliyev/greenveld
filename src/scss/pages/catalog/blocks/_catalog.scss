@@ -1,0 +1,260 @@
+@use "../../../functions/functions";
+@use "../../../mixins/mixins";
+@use "../../../variables/variables";
+
+.catalog {
+  padding-block: functions.responsive-value(8, 16) functions.responsive-value(16, 20);
+
+  // .catalog__inner
+  &__inner {
+    display: grid;
+    grid-template-columns: 166px 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+}
+
+.filter {
+  padding-block-start: 4px;
+
+  // .filter__top
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-block-end: functions.responsive-value(8, 6);
+  }
+
+  // .filter__close
+  &__close {
+    display: none;
+    flex: 0 0 auto;
+    font-size: 0;
+    color: variables.$color-8f8f8f;
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: color;
+      transition-duration: 0.3s;
+    }
+
+    @include mixins.hover {
+      color: variables.$color-hover;
+    }
+  }
+}
+
+.filter-title {
+  display: flex;
+  align-items: center;
+  gap: functions.responsive-value(8, 4);
+  font-weight: 500;
+  font-size: functions.responsive-value(18, 14);
+  line-height: 1.56;
+  color: variables.$color-1d1d1d;
+
+  // .filter-title__icon
+  &__icon {
+    flex: 0 0 auto;
+    font-size: 0;
+    color: variables.$color-black;
+
+    // .filter-title__icon--mobile
+    &--mobile {
+      display: none;
+    }
+
+    // .filter-title__icon--desktop
+    &--desktop {
+    }
+  }
+
+  // .filter-title__text
+  &__text {
+  }
+}
+
+.filter-form {
+  padding-inline-start: 4px;
+
+  // .filter-form__field
+  &__field {
+    &:not(:last-child) {
+      margin-block-end: 6px;
+    }
+  }
+}
+
+.filter-field {
+  // .filter-field__legend
+  &__legend {
+    margin-block-end: 2px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  // .filter-field__more
+  &__more {
+    .filter-field:not(:has(.filter-checkbox:nth-child(4))) &,
+    .filter-field:not(.filter-field--expanded):has(
+        .filter-checkboxes__item:nth-child(n + 4) .filter-checkbox__input:focus-visible
+      )
+      & {
+      display: none;
+    }
+  }
+}
+
+.filter-checkboxes {
+  // .filter-checkboxes__item
+  &__item {
+    .filter-field:not(
+        .filter-field--expanded,
+        :has(.filter-checkboxes__item:nth-child(n + 4) .filter-checkbox__input:focus-visible)
+      )
+      &:nth-child(n + 4) {
+      position: absolute;
+      inline-size: 1px;
+      block-size: 1px;
+      margin: -1px;
+      padding: 0;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+      white-space: nowrap;
+      border: none;
+      outline: none;
+      outline-offset: 0;
+    }
+  }
+}
+
+.filter-checkbox {
+  // .filter-checkbox__label
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-block-size: 24px;
+
+    .filter-checkbox:has(.filter-checkbox__input:focus-visible) & {
+      outline: 2px solid;
+      outline-offset: 2px;
+    }
+
+    .filter-checkbox:has(.filter-checkbox__input:disabled) & {
+      cursor: not-allowed;
+    }
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: color;
+      transition-duration: 0.3s;
+    }
+
+    @include mixins.hover {
+      color: variables.$color-hover;
+    }
+  }
+
+  // .filter-checkbox__icon
+  &__icon {
+    position: relative;
+    isolation: isolate;
+    flex: 0 0 auto;
+    inline-size: 14px;
+    aspect-ratio: 1 / 1;
+    font-size: 0;
+    color: rgba($color: variables.$color-b3b3b3, $alpha: 0);
+    border: 1.4px solid variables.$color-b3b3b3;
+    border-radius: 2px;
+    overflow: hidden;
+
+    .filter-checkbox:has(.filter-checkbox__input:checked) & {
+      color: variables.$color-32b864;
+      border-color: variables.$color-32b864;
+    }
+
+    svg {
+      position: absolute;
+      inset-block-start: 50%;
+      inset-inline-start: 50%;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // .filter-checkbox__text
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+  }
+
+  // .filter-checkbox__value
+  &__value {
+    .filter-checkbox:has(.filter-checkbox__input:disabled) & {
+      color: variables.$color-b3b3b3;
+    }
+  }
+
+  // .filter-checkbox__count
+  &__count {
+    color: variables.$color-b3b3b3;
+  }
+
+  // .filter-checkbox__input
+  &__input {
+  }
+}
+
+.filter-more {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: variables.$color-989898;
+
+  @include mixins.prefers-reduced-motion {
+    transition-property: color;
+    transition-duration: 0.3s;
+  }
+
+  @include mixins.hover {
+    color: variables.$color-hover;
+  }
+
+  // .filter-more__label
+  &__label {
+  }
+
+  // .filter-more__icon
+  &__icon {
+    flex: 0 0 auto;
+    font-size: 0;
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: color;
+      transition-duration: 0.3s;
+    }
+
+    @media (hover) {
+      .filter-more:not(:hover) & {
+        color: variables.$color-b3b3b3;
+      }
+    }
+
+    svg {
+      transform: rotate(90deg);
+
+      .filter-field--expanded & {
+        transform: rotate(270deg);
+      }
+
+      @include mixins.prefers-reduced-motion {
+        transition-property: transform;
+        transition-duration: 0.3s;
+      }
+    }
+  }
+}

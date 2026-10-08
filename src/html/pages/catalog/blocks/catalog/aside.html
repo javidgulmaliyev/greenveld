@@ -1,0 +1,475 @@
+<aside class="filter">
+  <div class="filter__top">
+    <h2 class="filter-title">
+      <span class="filter-title__icon filter-title__icon--mobile" aria-hidden="true">
+        <svg width="24" height="24">
+          <use xlink:href="#icon-sort"></use>
+        </svg>
+      </span>
+      <span class="filter-title__text">Фильтр товаров</span>
+      <span class="filter-title__icon filter-title__icon--desktop" aria-hidden="true">
+        <svg width="20" height="20">
+          <use xlink:href="#icon-filter"></use>
+        </svg>
+      </span>
+    </h2>
+    <button class="filter__close" aria-label="Закрыть фильтр">
+      <svg width="20" height="20" aria-hidden="true">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+  <form class="filter-form" id="form-filter" action="#">
+    <fieldset class="filter-form__field filter-field">
+      <legend class="filter-field__legend">Длина рулона:</legend>
+      <div class="filter-checkboxes">
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-length-20">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">20 м</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>3)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-length-20" name="filter-checkbox-length" type="checkbox" value="20">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-length-25">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">25 м</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>9)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-length-25" name="filter-checkbox-length" type="checkbox" value="25">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-length-30">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">30 м</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>2)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-length-30" name="filter-checkbox-length" type="checkbox" value="30">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-length-40">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">40 м</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>60)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-length-40" name="filter-checkbox-length" type="checkbox" value="40">
+        </div>
+      </div>
+      <more-button show-text="Показать ещё" hide-text="Скрыть">
+        <button class="filter-field__more filter-more" type="button">
+          <span class="filter-more__label">Показать ещё</span>
+          <span class="filter-more__icon" aria-hidden="true">
+            <svg width="20" height="20">
+              <use xlink:href="#icon-chevron"></use>
+            </svg>
+          </span>
+        </button>
+      </more-button>
+    </fieldset>
+    <fieldset class="filter-form__field filter-field">
+      <legend class="filter-field__legend">Высота ворса:</legend>
+      <div class="filter-checkboxes">
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-height-12">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">12 мм</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>8)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-height-12" name="filter-checkbox-height" type="checkbox" value="12">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-height-13">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">13 мм</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>2)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-height-13" name="filter-checkbox-height" type="checkbox" value="13">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-height-15">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">15 мм</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>2)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-height-15" name="filter-checkbox-height" type="checkbox" value="15">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-height-18">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">18 мм</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>1)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-height-18" name="filter-checkbox-height" type="checkbox" value="18">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-height-20">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">20 мм</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>20)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-height-20" name="filter-checkbox-height" type="checkbox" value="20">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-height-40">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">40 мм</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>19)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-height-40" name="filter-checkbox-height" type="checkbox" value="40">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-height-45">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">45 мм</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>1)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-height-45" name="filter-checkbox-height" type="checkbox" value="45">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-height-50">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">50 мм</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>9)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-height-50" name="filter-checkbox-height" type="checkbox" value="50">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-height-60">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">60 мм</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>18)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-height-60" name="filter-checkbox-height" type="checkbox" value="60">
+        </div>
+      </div>
+      <more-button show-text="Показать ещё" hide-text="Скрыть">
+        <button class="filter-field__more filter-more" type="button">
+          <span class="filter-more__label">Показать ещё</span>
+          <span class="filter-more__icon" aria-hidden="true">
+            <svg width="20" height="20">
+              <use xlink:href="#icon-chevron"></use>
+            </svg>
+          </span>
+        </button>
+      </more-button>
+    </fieldset>
+    <fieldset class="filter-form__field filter-field">
+      <legend class="filter-field__legend">Коллекция:</legend>
+      <div class="filter-checkboxes">
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-deco">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Deco</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>1)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-deco" name="filter-checkbox-collection" type="checkbox" value="Deco">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-deco-sport">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Deco Sport</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>3)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-deco-sport" name="filter-checkbox-collection" type="checkbox" value="Deco Sport">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-fifa">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">FIFA</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>7)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-fifa" name="filter-checkbox-collection" type="checkbox" value="FIFA">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-fit">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Fit</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>1)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-fit" name="filter-checkbox-collection" type="checkbox" value="Fit">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-football">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Football</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>24)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-football" name="filter-checkbox-collection" type="checkbox" value="Football">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-geleonsport">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Geleonsport</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>1)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-geleonsport" name="filter-checkbox-collection" type="checkbox" value="Geleonsport">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-golf">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Golf</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>1)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-golf" name="filter-checkbox-collection" type="checkbox" value="Golf">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-hockey">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Hockey</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>2)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-hockey" name="filter-checkbox-collection" type="checkbox" value="Hockey">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-multisport">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Multisport</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>5)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-multisport" name="filter-checkbox-collection" type="checkbox" value="Multisport">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-nature">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Nature</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>1)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-nature" name="filter-checkbox-collection" type="checkbox" value="Nature">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-padel">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Padel</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>7)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-padel" name="filter-checkbox-collection" type="checkbox" value="Padel">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-refturf">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Refturf</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>1)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-refturf" name="filter-checkbox-collection" type="checkbox" value="Refturf">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-sport">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Sport</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>11)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-sport" name="filter-checkbox-collection" type="checkbox" value="Sport">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-sports">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Sports</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>10)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-sports" name="filter-checkbox-collection" type="checkbox" value="Sports">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-tennis">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Tennis</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>2)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-tennis" name="filter-checkbox-collection" type="checkbox" value="Tennis">
+        </div>
+        <div class="filter-checkboxes__item filter-checkbox">
+          <label class="filter-checkbox__label" for="filter-checkbox-collection-atlanta">
+            <span class="filter-checkbox__icon" aria-hidden="true">
+              <svg width="14" height="14">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="filter-checkbox__text">
+              <span class="filter-checkbox__value">Атланта</span>
+              <span class="filter-checkbox__count">(<span class="visually-hidden">количество товаров:&#32;</span>1)</span>
+            </span>
+          </label>
+          <input class="filter-checkbox__input visually-hidden" id="filter-checkbox-collection-atlanta" name="filter-checkbox-collection" type="checkbox" value="Атланта">
+        </div>
+      </div>
+      <more-button show-text="Показать ещё" hide-text="Скрыть">
+        <button class="filter-field__more filter-more" type="button">
+          <span class="filter-more__label">Показать ещё</span>
+          <span class="filter-more__icon" aria-hidden="true">
+            <svg width="20" height="20">
+              <use xlink:href="#icon-chevron"></use>
+            </svg>
+          </span>
+        </button>
+      </more-button>
+    </fieldset>
+  </form>
+</aside>
