@@ -1,0 +1,64 @@
+@use "../../functions/functions";
+@use "../../mixins/mixins";
+@use "../../variables/variables";
+
+.slider-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  pointer-events: none;
+
+  &:has(
+    .swiper-button-disabled + .swiper-button-disabled,
+    .swiper-button-lock + .swiper-button-lock,
+    .swiper-button-disabled + .swiper-button-lock,
+    .swiper-button-lock + .swiper-button-disabled
+  ) {
+    display: none;
+  }
+
+  // .slider-arrows__button
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    inline-size: 36px;
+    aspect-ratio: 1 / 1;
+    font-size: 0;
+    background-color: variables.$color-white;
+    box-shadow: 0 2px 8px 0 rgba(16, 24, 40, 0.04);
+    border: 0.4px solid variables.$color-f2f2f2;
+    border-radius: 50%;
+    pointer-events: all;
+    cursor: pointer;
+
+    &:is(.swiper-button-disabled, .swiper-button-lock) {
+      display: none;
+    }
+
+    // .slider-arrows__button--prev
+    &--prev {
+    }
+
+    // .slider-arrows__button--next
+    &--next {
+      margin-inline-start: auto;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: color, background-color;
+      transition-duration: 0.3s;
+    }
+
+    @include mixins.hover {
+      color: variables.$color-white;
+      background-color: variables.$color-hover;
+    }
+  }
+}
