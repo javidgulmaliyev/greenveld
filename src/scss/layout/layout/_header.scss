@@ -102,6 +102,7 @@
   &__icon {
     flex: 0 0 auto;
     font-size: 0;
+    color: variables.$color-4d4d4d;
 
     @include mixins.prefers-reduced-motion {
       transition-property: color;
@@ -109,8 +110,8 @@
     }
 
     @media (hover) {
-      .catalog-button:not(:hover) & {
-        color: variables.$color-4d4d4d;
+      .catalog-button:hover & {
+        color: inherit;
       }
     }
   }
@@ -307,6 +308,7 @@
   &__icon {
     flex: 0 0 auto;
     font-size: 0;
+    color: variables.$color-8f8f8f;
 
     @include mixins.prefers-reduced-motion {
       transition-property: color;
@@ -314,8 +316,8 @@
     }
 
     @media (hover) {
-      .nav-link:not(:hover) & {
-        color: variables.$color-8f8f8f;
+      .nav-link:hover & {
+        color: inherit;
       }
     }
 

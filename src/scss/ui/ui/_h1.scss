@@ -1,0 +1,13 @@
+@use "../../functions/functions";
+@use "../../mixins/mixins";
+@use "../../variables/variables";
+
+.h1 {
+  font-weight: 500;
+  font-size: functions.responsive-value(28, 24);
+  line-height: 1.33;
+
+  @media (min-width: #{768 + 0.1px}) {
+    line-height: 1.36;
+  }
+}

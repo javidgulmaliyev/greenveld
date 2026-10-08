@@ -1,0 +1,111 @@
+<div class="catalog-main__top">
+  <div class="catalog-buttons">
+    <button class="filter-button">
+      <span class="filter-button__icon" aria-hidden="true">
+        <svg width="24" height="24">
+          <use xlink:href="#icon-sort"></use>
+        </svg>
+      </span>
+      <span class="filter-button__label">Фильтр товаров</span>
+    </button>
+    <div class="catalog-sort">
+      <sort-button>
+        <button class="sort-button">
+          <span class="sort-button__icon" aria-hidden="true">
+            <svg width="16" height="16">
+              <use xlink:href="#icon-swap"></use>
+            </svg>
+          </span>
+          <span class="sort-button__label">Сортировка</span>
+        </button>
+      </sort-button>
+      <form class="catalog-sort__form sort-form" id="form-catalog-sort" action="#">
+        <div class="sort-form__top">
+          <div class="sort-title">
+            <span class="sort-title__icon" aria-hidden="true">
+              <svg width="16" height="16">
+                <use xlink:href="#icon-swap"></use>
+              </svg>
+            </span>
+            <span class="sort-title__text">Сортировка</span>
+          </div>
+          <button class="sort-form__close" type="button" aria-label="Закрыть сортировку">
+            <svg width="16" height="16" aria-hidden="true">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="sort-form__inner">
+          <div class="sort-form__radio sort-radio">
+            <label class="sort-radio__label" for="sort-radio-popular">
+              <span class="sort-radio__icon"></span>
+              <span class="sort-radio__text">Популярные</span>
+            </label>
+            <input class="sort-radio__input visually-hidden" id="sort-radio-popular" name="sort-radio" type="radio" value="popular">
+          </div>
+          <div class="sort-form__radio sort-radio">
+            <label class="sort-radio__label" for="sort-radio-price">
+              <span class="sort-radio__icon"></span>
+              <span class="sort-radio__text">Цена</span>
+            </label>
+            <input class="sort-radio__input visually-hidden" id="sort-radio-price" name="sort-radio" type="radio" value="price">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="filter-choices">
+    <div class="filter-choice">
+      <div class="filter-choice__label">Длина рулона:</div>
+      <div class="filter-choice__values">
+        <div class="choice-value">
+          <div class="choice-value__inner">
+            <span class="choice-value__text">20 м</span>
+            <button class="choice-value__remove" aria-label="Удалить">
+              <svg width="12" height="12" aria-hidden="true">
+                <use xlink:href="#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-choice">
+      <div class="filter-choice__label">Высота ворса:</div>
+      <div class="filter-choice__values">
+        <div class="choice-value">
+          <div class="choice-value__inner">
+            <span class="choice-value__text">20 мм</span>
+            <button class="choice-value__remove" aria-label="Удалить">
+              <svg width="12" height="12" aria-hidden="true">
+                <use xlink:href="#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-choice">
+      <div class="filter-choice__label">Коллекция:</div>
+      <div class="filter-choice__values">
+        <div class="choice-value">
+          <div class="choice-value__inner">
+            <span class="choice-value__text">Deco Sport</span>
+            <button class="choice-value__remove" aria-label="Удалить">
+              <svg width="12" height="12" aria-hidden="true">
+                <use xlink:href="#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form class="catalog-main__show catalog-show" id="form-catalog-show" action="#">
+    <select class="catalog-show__select" id="catalog-show-select" name="catalog-show-select">
+      <option value="12" selected>Показывать на странице 12</option>
+      <option value="24">Показывать на странице 24</option>
+      <option value="48">Показывать на странице 48</option>
+    </select>
+  </form>
+</div>
