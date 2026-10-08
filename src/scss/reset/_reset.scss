@@ -157,3 +157,7 @@
 ::placeholder {
   color: unset;
 }
+
+:where(movable-element) {
+  display: contents;
+}

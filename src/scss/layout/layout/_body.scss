@@ -4,12 +4,30 @@
 
 body {
   font-family: variables.$font-gilroy;
-  // font-size: ;
-  // line-height: ;
-  // color: ;
   background-color: variables.$color-f5f5f5;
+
+  html:not(.scroll-lock) & {
+    &::after {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
 
   .scroll-lock & {
     overflow: hidden;
+  }
+
+  &::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 25;
+    font-size: 0;
+    background-color: rgba(variables.$color-141414, 0.5);
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: visibility, opacity;
+      transition-duration: 0.3s;
+    }
   }
 }

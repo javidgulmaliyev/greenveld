@@ -1,23 +1,245 @@
 <header class="header" id="header" data-header="header" data-burger="wrapper">
   <div class="header__wrapper container" data-header="wrapper">
-    <div class="header-logo">
-      <a class="header-logo__image ibg" href="#">
-        <!-- <img src="@img" alt="Лого"> -->
-      </a>
-    </div>
-    <button class="burger-button" data-burger="button">
-      <span class="burger-button__line burger-button__line--top"></span>
-      <span class="burger-button__line burger-button__line--center"></span>
-      <span class="burger-button__line burger-button__line--bottom"></span>
-    </button>
-    <div class="header-nav" data-burger="menu">
-      <nav class="header-nav__inner" aria-label="Главная навигация">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="#">link</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="header__inner">
+      <div class="header__main">
+        <div class="header-logo">
+          <a class="header-logo__image responsive-media" href="/">
+            <img src="img/logo.png" alt="Главная страница">
+          </a>
+        </div>
+        <button class="catalog-button">
+          <span class="catalog-button__icon" aria-hidden="true">
+            <svg width="20" height="20">
+              <use xlink:href="#icon-catalog"></use>
+            </svg>
+          </span>
+          <span class="catalog-button__label">Каталог</span>
+        </button>
+        <div class="header-nav" data-burger="menu">
+          <div class="header-nav__top" id="header-nav-top">
+            <button class="burger-close-button" data-burger="close">
+              <svg width="20" height="20" aria-hidden="true">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <nav class="header-nav__inner" aria-label="Главная навигация">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a class="header-nav__link nav-link" href="#">
+                  <span class="nav-link__label">О нас</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link nav-link" href="#">
+                  <span class="nav-link__label">Услуги</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link nav-link" href="#">
+                  <span class="nav-link__label">Доставка и оплата</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link nav-link" href="#">
+                  <span class="nav-link__label">Блог</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link nav-link" href="#">
+                  <span class="nav-link__label">Контакты</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header-nav__button">Перезвоните мне</button>
+        </div>
+        <movable-element target="header-nav-top" to="end" media="(max-width: 600px)">
+          <search class="header-search">
+            <form class="search-form" id="form-header-search" action="#">
+              <input class="search-form__input" id="search-form-search" name="search-form-search" type="search" inputmode="search" placeholder="Искать на сайте" required>
+              <button class="search-form__submit" type="submit">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+          </search>
+        </movable-element>
+        <div class="header-links">
+          <div class="header-contacts">
+            <a class="header-contacts__item" href="tel:+74954316365">+7 (495) 431-63-65</a>
+            <a class="header-contacts__item" href="mailto:kp56@greenveld.ru">kp56@greenveld.ru</a>
+          </div>
+          <ul class="header-icons">
+            <li class="header-icons__item header-icons__item--hide">
+              <a class="header-icons__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Телефон">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-icons__item header-icons__item--hide">
+              <a class="header-icons__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-icons__item header-icons__item--hide">
+              <a class="header-icons__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Макс">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="#icon-max"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-icons__item">
+              <a class="header-icons__link" href="#" aria-label="Корзина">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="#icon-bag"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-icons__item">
+              <button class="header-icons__link header-icons__link--burger" data-burger="open">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="#icon-menu"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <movable-element id="header-catalog" target="header" to="after" media="(max-width: 1024px)">
+        <div class="header-catalog">
+          <div class="header-catalog__top">
+            <button class="header-catalog__close" aria-label="Закрыть каталог">
+              <svg width="20" height="20" aria-hidden="true">
+                <use xlink:href="#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <nav class="catalog-nav" aria-label="Каталог товаров">
+            <ul class="catalog-nav__list">
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--current nav-link" href aria-current="page">
+                  <span class="nav-link__label">Весь газон</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link nav-link" href="#">
+                  <span class="nav-link__label">Спортобъекты</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link nav-link" href="#">
+                  <span class="nav-link__label">Цветная</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link nav-link" href="#">
+                  <span class="nav-link__label">Ландшафтная</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link nav-link" href="#">
+                  <span class="nav-link__label">Дача и улица</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link nav-link" href="#">
+                  <span class="nav-link__label">Детские площадки</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link nav-link" href="#">
+                  <span class="nav-link__label">Заборы из газона</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link nav-link" href="#">
+                  <span class="nav-link__label">Остатки (со скидкой)</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link nav-link" href="#">
+                  <span class="nav-link__label">Товары для укладки</span>
+                  <span class="nav-link__icon" aria-hidden="true">
+                    <svg width="20" height="20">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </movable-element>
     </div>
   </div>
 </header>
