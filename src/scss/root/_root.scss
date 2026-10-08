@@ -1,4 +1,9 @@
+@use "../functions/functions";
+
 :root {
-  // --header-height: ;
-  // --outline-color: ;
+  --header-height: #{functions.responsive-value(88, 76)};
+
+  @media (min-width: #{1024 + 0.1px}) {
+    --header-height: 144px;
+  }
 }

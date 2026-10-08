@@ -3,12 +3,22 @@
 @use "../../variables/variables";
 
 .header {
+  block-size: variables.$header-height;
   font-weight: 500;
   font-size: 14px;
 
   // .header__wrapper
   &__wrapper {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline: 0;
+    z-index: 100;
+    min-block-size: functions.responsive-value(88, 76);
     padding-block: functions.responsive-value(20, 16) functions.responsive-value(8, 4);
+
+    @media (min-width: #{1024 + 0.1px}) {
+      min-block-size: 144px;
+    }
   }
 
   // .header__inner
@@ -125,6 +135,18 @@
 }
 
 .header-nav {
+  .header__main > & {
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .wrapper > & {
+    @media (min-width: #{1024 + 0.1px}) {
+      display: none;
+    }
+  }
+
   @media (max-width: 1024px) {
     position: fixed;
     isolation: isolate;
@@ -305,6 +327,18 @@
 
 .header-search {
   flex: 1 1 auto;
+
+  .header__main > movable-element > & {
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .header-nav__top > movable-element > & {
+    @media (min-width: #{600 + 0.1px}) {
+      display: none;
+    }
+  }
 }
 
 .search-form {
@@ -479,6 +513,18 @@
 }
 
 .header-catalog {
+  .header__inner > movable-element > & {
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .wrapper > movable-element > & {
+    @media (min-width: #{1024 + 0.1px}) {
+      display: none;
+    }
+  }
+
   @media (max-width: 1024px) {
     position: fixed;
     isolation: isolate;
