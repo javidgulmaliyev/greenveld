@@ -389,6 +389,7 @@
 
   // .header-contacts__item
   &__item {
+    white-space: nowrap;
     color: variables.$color-616161;
 
     @include mixins.prefers-reduced-motion {
