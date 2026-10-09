@@ -1169,6 +1169,8 @@
 
   // .product-buy__button
   &__button {
+    --outline-color: #{variables.$color-32b864};
+
     display: flex;
     align-items: center;
     justify-content: center;

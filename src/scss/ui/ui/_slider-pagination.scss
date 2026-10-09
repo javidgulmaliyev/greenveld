@@ -16,16 +16,15 @@
   align-items: center;
   justify-content: center;
   inline-size: 100%;
-  block-size: 4px;
+  block-size: 6px;
+
+  @media (min-width: #{1024 + 0.1px}) {
+    block-size: 4px;
+  }
 
   .swiper-pagination-bullet {
     flex: 0 0 auto;
     font-size: 0;
-
-    @include mixins.prefers-reduced-motion {
-      transition-property: width, height, border-radius, background;
-      transition-duration: 0.3s;
-    }
 
     @include mixins.hover {
       --swiper-pagination-bullet-inactive-color: #{variables.$color-8f8f8f};
@@ -33,7 +32,14 @@
   }
 
   .swiper-pagination-bullet-active {
-    --swiper-pagination-bullet-width: 8px;
-    --swiper-pagination-bullet-border-radius: 4px;
+    @media (min-width: #{1024 + 0.1px}) {
+      --swiper-pagination-bullet-width: 8px;
+      --swiper-pagination-bullet-border-radius: 4px;
+    }
+
+    @media (max-width: 1024px) {
+      --swiper-pagination-bullet-width: 6px;
+      --swiper-pagination-bullet-height: 6px;
+    }
   }
 }
