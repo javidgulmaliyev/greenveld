@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import { Keyboard, Pagination } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 
 class ProductSlider extends HTMLElement {
   /** @type {Swiper} */
@@ -29,11 +29,7 @@ class ProductSlider extends HTMLElement {
 
   init() {
     this.swiper = new Swiper(this.slider, {
-      modules: [Keyboard, Pagination],
-      keyboard: {
-        enabled: true,
-        pageUpDown: false,
-      },
+      modules: [Pagination],
       pagination: {
         clickable: true,
         el: this.pagination,
