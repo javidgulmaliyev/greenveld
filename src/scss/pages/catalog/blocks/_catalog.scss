@@ -371,6 +371,11 @@
       display: none;
     }
   }
+
+  // .catalog-main__pagination
+  &__pagination {
+    margin-block-start: functions.responsive-value(44, 24);
+  }
 }
 
 .catalog-buttons {
@@ -1237,6 +1242,102 @@
 
     @include mixins.hover {
       color: variables.$color-hover;
+    }
+  }
+}
+
+.catalog-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  @media (min-width: #{340 + 0.1px}) {
+    gap: functions.responsive-value(48, 24);
+  }
+
+  // .catalog-pagination__arrow
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    inline-size: functions.responsive-value(36, 32, 340, 280, "fixed-start-value", "px");
+    aspect-ratio: 1 / 1;
+    color: variables.$color-b3b3b3;
+    background-color: variables.$color-white;
+    box-shadow: 0 2px 8px 0 rgba(16, 24, 40, 0.04);
+    border: 0.4px solid variables.$color-f2f2f2;
+    border-radius: 50%;
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: color, background-color;
+      transition-duration: 0.3s;
+    }
+
+    @include mixins.hover {
+      color: variables.$color-white;
+      background-color: variables.$color-hover;
+    }
+
+    // .catalog-pagination__arrow--prev
+    &--prev {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    // .catalog-pagination__arrow--next
+    &--next {
+    }
+  }
+}
+
+.pagination-pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  // .pagination-pages__item
+  &__item {
+    flex: 0 0 auto;
+  }
+
+  // .pagination-pages__link
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    inline-size: functions.responsive-value(36, 32, 340, 280, "fixed-start-value", "px");
+    aspect-ratio: 1 / 1;
+    font-weight: 500;
+    font-size: 14px;
+    color: variables.$color-8f8f8f;
+    background-color: variables.$color-white;
+    border: 0.4px solid variables.$color-f2f2f2;
+    border-radius: 50%;
+
+    &:not([href]) {
+      cursor: default;
+    }
+
+    &[href] {
+      @include mixins.prefers-reduced-motion {
+        transition-property: color, background-color;
+        transition-duration: 0.3s;
+      }
+
+      @include mixins.hover {
+        color: variables.$color-white;
+        background-color: variables.$color-hover;
+      }
+    }
+
+    // .pagination-pages__link--current
+    &--current {
+      color: variables.$color-black;
     }
   }
 }
