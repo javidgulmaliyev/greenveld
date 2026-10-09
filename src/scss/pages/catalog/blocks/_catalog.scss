@@ -340,6 +340,7 @@
 .catalog-sort {
   position: relative;
   isolation: isolate;
+  z-index: 5;
 
   // .catalog-sort__form
   &__form {
