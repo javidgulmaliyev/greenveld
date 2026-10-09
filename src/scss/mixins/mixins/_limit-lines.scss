@@ -8,7 +8,7 @@
 
     display: -webkit-box;
 
-    block-size: calc(var(--line-count) * 1lh);
+    // block-size: calc(var(--line-count) * 1lh);
     line-clamp: var(--line-count);
     overflow: hidden;
   }
