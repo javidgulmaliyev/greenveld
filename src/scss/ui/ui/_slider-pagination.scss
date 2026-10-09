@@ -1,0 +1,39 @@
+@use "../../functions/functions";
+@use "../../mixins/mixins";
+@use "../../variables/variables";
+
+.slider-pagination {
+  --swiper-pagination-bullet-horizontal-gap: 2px;
+  --swiper-pagination-bullet-width: 4px;
+  --swiper-pagination-bullet-height: 4px;
+  --swiper-pagination-bullet-border-radius: 50%;
+  --swiper-pagination-bullet-inactive-color: #{variables.$color-d9d9d9};
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-color: #{variables.$color-8f8f8f};
+
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 100%;
+  block-size: 4px;
+
+  .swiper-pagination-bullet {
+    flex: 0 0 auto;
+    font-size: 0;
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: width, height, border-radius, background;
+      transition-duration: 0.3s;
+    }
+
+    @include mixins.hover {
+      --swiper-pagination-bullet-inactive-color: #{variables.$color-8f8f8f};
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-border-radius: 4px;
+  }
+}
