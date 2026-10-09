@@ -21,7 +21,7 @@ class ProductSlider extends HTMLElement {
   }
 
   disconnectedCallback() {
-    this.swiper.destroy(this.swiper);
+    this.swiper?.destroy(this.swiper);
     this.swiper = null;
     this.slider = null;
     this.pagination = null;

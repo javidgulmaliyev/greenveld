@@ -1,13 +1,15 @@
 <div class="catalog-main__top">
   <div class="catalog-buttons">
-    <button class="filter-button">
-      <span class="filter-button__icon" aria-hidden="true">
-        <svg width="24" height="24">
-          <use xlink:href="#icon-sort"></use>
-        </svg>
-      </span>
-      <span class="filter-button__label">Фильтр товаров</span>
-    </button>
+    <filter-button>
+      <button class="filter-button">
+        <span class="filter-button__icon" aria-hidden="true">
+          <svg width="24" height="24">
+            <use xlink:href="#icon-sort"></use>
+          </svg>
+        </span>
+        <span class="filter-button__label">Фильтр товаров</span>
+      </button>
+    </filter-button>
     <div class="catalog-sort">
       <sort-button>
         <button class="sort-button">
@@ -19,41 +21,41 @@
           <span class="sort-button__label">Сортировка</span>
         </button>
       </sort-button>
-      <movable-element target="wrapper" to="end" media="(max-width: 1024px)">
-        <form class="sort-form" id="form-catalog-sort" action="#">
-          <div class="sort-form__top">
-            <div class="sort-title">
-              <span class="sort-title__icon" aria-hidden="true">
-                <svg width="16" height="16">
-                  <use xlink:href="#icon-swap"></use>
-                </svg>
-              </span>
-              <span class="sort-title__text">Сортировка</span>
-            </div>
-            <button class="sort-form__close" type="button" aria-label="Закрыть сортировку">
-              <svg width="16" height="16" aria-hidden="true">
-                <use xlink:href="#icon-close"></use>
+      <!-- <movable-element target="wrapper" to="end" media="(max-width: 1024px)"> -->
+      <form class="sort-form" id="form-catalog-sort" action="#">
+        <div class="sort-form__top">
+          <div class="sort-title">
+            <span class="sort-title__icon" aria-hidden="true">
+              <svg width="16" height="16">
+                <use xlink:href="#icon-swap"></use>
               </svg>
-            </button>
+            </span>
+            <span class="sort-title__text">Сортировка</span>
           </div>
-          <div class="sort-form__inner">
-            <div class="sort-form__radio sort-radio">
-              <label class="sort-radio__label" for="sort-radio-popular">
-                <span class="sort-radio__icon"></span>
-                <span class="sort-radio__text">Популярные</span>
-              </label>
-              <input class="sort-radio__input visually-hidden" id="sort-radio-popular" name="sort-radio" type="radio" value="popular">
-            </div>
-            <div class="sort-form__radio sort-radio">
-              <label class="sort-radio__label" for="sort-radio-price">
-                <span class="sort-radio__icon"></span>
-                <span class="sort-radio__text">Цена</span>
-              </label>
-              <input class="sort-radio__input visually-hidden" id="sort-radio-price" name="sort-radio" type="radio" value="price">
-            </div>
+          <button class="sort-form__close" type="button" aria-label="Закрыть сортировку">
+            <svg width="16" height="16" aria-hidden="true">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="sort-form__inner">
+          <div class="sort-form__radio sort-radio">
+            <label class="sort-radio__label" for="sort-radio-popular">
+              <span class="sort-radio__icon"></span>
+              <span class="sort-radio__text">Популярные</span>
+            </label>
+            <input class="sort-radio__input visually-hidden" id="sort-radio-popular" name="sort-radio" type="radio" value="popular">
           </div>
-        </form>
-      </movable-element>
+          <div class="sort-form__radio sort-radio">
+            <label class="sort-radio__label" for="sort-radio-price">
+              <span class="sort-radio__icon"></span>
+              <span class="sort-radio__text">Цена</span>
+            </label>
+            <input class="sort-radio__input visually-hidden" id="sort-radio-price" name="sort-radio" type="radio" value="price">
+          </div>
+        </div>
+      </form>
+      <!-- </movable-element> -->
     </div>
   </div>
   <div class="filter-choices">

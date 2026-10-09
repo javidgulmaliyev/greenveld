@@ -32,7 +32,7 @@ class MoreButton extends HTMLElement {
     this.showText = null;
     this.hideText = null;
     this.textElement = null;
-    this.abortController.abort();
+    this.abortController?.abort();
   }
 
   init() {

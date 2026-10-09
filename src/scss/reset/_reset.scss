@@ -166,10 +166,18 @@
   display: contents;
 }
 
+:where(filter-button) {
+  display: contents;
+}
+
 :where(sort-button) {
   display: contents;
 }
 
 :where(product-slider) {
+  display: contents;
+}
+
+:where(tabs-element) {
   display: contents;
 }

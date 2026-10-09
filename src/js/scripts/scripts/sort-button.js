@@ -16,7 +16,7 @@ class SortButton extends HTMLElement {
 
   disconnectedCallback() {
     this.form = null;
-    this.abortController.abort();
+    this.abortController?.abort();
   }
 
   init() {
