@@ -1,0 +1,170 @@
+<dialog-element>
+  <dialog class="dialog" id="dialog-buy" popover>
+    <div class="dialog__inner buy">
+      <div class="buy__top">
+        <div class="buy__text">Ваш товар:</div>
+        <button class="buy__close" popovertarget="dialog-buy" popovertargetaction="hide" aria-label="Закрыть модальное окно">
+          <svg width="20" height="20" aria-hidden="true">
+            <use xlink:href="#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="buy__inner">
+        <div class="buy__main">
+          <div class="buy__image responsive-media">
+            <img src="img/images/pages/catalog/catalog/1.jpg" alt="" loading="lazy">
+          </div>
+          <div class="buy__code product-code">
+            <div class="product-code__label">Код товара:</div>
+            <div class="product-code__value">Npg-13</div>
+          </div>
+          <h2 class="buy__title">Искусственная трава Premium Grass Eco 7 Green</h2>
+          <div class="buy__prices buy-prices">
+            <div class="buy-prices__item buy-price">
+              <div class="buy-price__label">Цена за рулон:</div>
+              <div class="buy-price__values">
+                <div class="buy-price__old">2000 ₽/м²</div>
+                <div class="buy-price__current">2000 ₽/м²</div>
+              </div>
+            </div>
+            <div class="buy-prices__item buy-price">
+              <div class="buy-price__label">Цена за отрез:</div>
+              <div class="buy-price__values">
+                <div class="buy-price__old">1500 ₽/м²</div>
+                <div class="buy-price__current">1500 ₽/м²</div>
+              </div>
+            </div>
+          </div>
+          <div class="buy__width buy-width">
+            <div class="buy-width__label">Ширина рулона:</div>
+            <div class="buy-width__radios">
+              <div class="buy-radio">
+                <label class="buy-radio__label" for="buy-radio-2">2 м</label>
+                <input class="buy-radio__input visually-hidden" id="buy-radio-2" name="buy-radio" type="radio" form="form-buy" value="2" required checked>
+              </div>
+              <div class="buy-radio">
+                <label class="buy-radio__label" for="buy-radio-4">4 м</label>
+                <input class="buy-radio__input visually-hidden" id="buy-radio-4" name="buy-radio" type="radio" form="form-buy" value="4" required>
+              </div>
+            </div>
+          </div>
+          <div class="buy-characteristics">
+            <div class="buy-characteristics__title">Характеристики:</div>
+            <ul class="buy-characteristics__list">
+              <li class="buy-characteristics__item">
+                <div class="buy-characteristics__label">Для</div>
+              </li>
+              <li class="buy-characteristics__item">
+                <div class="buy-characteristics__label">ID товара для поиска</div>
+                <div class="buy-characteristics__value">487</div>
+              </li>
+              <li class="buy-characteristics__item">
+                <div class="buy-characteristics__label">Артикул</div>
+                <div class="buy-characteristics__value">Npg-13</div>
+              </li>
+              <li class="buy-characteristics__item">
+                <div class="buy-characteristics__label">Назначение</div>
+                <div class="buy-characteristics__value">Декоративная</div>
+              </li>
+              <li class="buy-characteristics__item">
+                <div class="buy-characteristics__label">Вес ворса, г/м²</div>
+                <div class="buy-characteristics__value">210</div>
+              </li>
+              <li class="buy-characteristics__item">
+                <div class="buy-characteristics__label">Высота ворса</div>
+                <div class="buy-characteristics__value">7</div>
+              </li>
+              <li class="buy-characteristics__item">
+                <div class="buy-characteristics__label">Длина рулона</div>
+                <div class="buy-characteristics__value">25</div>
+              </li>
+              <li class="buy-characteristics__item">
+                <div class="buy-characteristics__label">Коллекция</div>
+                <div class="buy-characteristics__value">Eco</div>
+              </li>
+              <li class="buy-characteristics__item">
+                <div class="buy-characteristics__label">Основа</div>
+                <div class="buy-characteristics__value">Латекс</div>
+              </li>
+              <li class="buy-characteristics__item">
+                <div class="buy-characteristics__label">Состав</div>
+                <div class="buy-characteristics__value">Полиэтилен</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="buy__actions buy-actions">
+          <form-tabs>
+            <form class="buy-actions__tabs buy-tabs" id="form-buy" action="#">
+              <div class="buy-tabs__buttons">
+                <button class="buy-tabs__button" type="button" data-tab="Рулон" data-active>Рулон</button>
+                <button class="buy-tabs__button" type="button" data-tab="Отрез">Отрез</button>
+              </div>
+              <div class="buy-tabs__regions">
+                <fieldset class="buy-form" data-region="Рулон">
+                  <legend class="visually-hidden">Рулон</legend>
+                  <div class="buy-form__count buy-count">
+                    <label class="buy-count__label" for="buy-count-number">Количество&#32;<span class="visually-hidden">(в штуках)</span></label>
+                    <input class="buy-count__input" id="buy-count-number" name="buy-count-number" type="number" inputmode="numeric" value="1" min="1" step="1" required>
+                    <div class="buy-count__unit" aria-hidden="true">шт</div>
+                  </div>
+                  <div class="buy-form__price"><span>12000</span>&#32;руб.</div>
+                  <div class="buy-form__result buy-result">
+                    <div class="buy-result__label">Покупаемое количество товара:</div>
+                    <div class="buy-result__value"><span class="buy-result__dimensions">Д x Ш =</span>&#32;25м * 2м = 50.00 м²</div>
+                    <div class="buy-result__image responsive-media">
+                      <img src="img/images/dialogs/buy/1.png" alt="" loading="lazy">
+                    </div>
+                  </div>
+                  <div class="buy-form__buy product-buy">
+                    <button class="product-buy__button" type="submit">Купить</button>
+                    <button class="product-buy__one" type="button" popovertarget="">Купить в один клик</button>
+                  </div>
+                </fieldset>
+                <fieldset class="buy-form" data-region="Отрез" disabled>
+                  <legend class="visually-hidden">Отрез</legend>
+                  <div class="buy-form__count buy-count">
+                    <label class="buy-count__label" for="buy-count-decimal">Длина отреза&#32;<span class="visually-hidden">(в метрах)</span></label>
+                    <input class="buy-count__input" id="buy-count-decimal" name="buy-count-decimal" type="number" inputmode="numeric" value="1" min="0.1" step="0.1" required>
+                    <div class="buy-count__unit" aria-hidden="true">м</div>
+                  </div>
+                  <div class="buy-form__price"><span>540</span>&#32;руб.</div>
+                  <div class="buy-form__result buy-result">
+                    <div class="buy-result__label">Покупаемое количество товара:</div>
+                    <div class="buy-result__value"><span class="buy-result__dimensions">Д x Ш =</span>&#32;1м * 2м = 2.00 м²</div>
+                    <div class="buy-result__image responsive-media">
+                      <img src="img/images/dialogs/buy/1.png" alt="" loading="lazy">
+                    </div>
+                  </div>
+                  <div class="buy-form__buy product-buy">
+                    <button class="product-buy__button" type="submit">Купить</button>
+                    <button class="product-buy__one" type="button" popovertarget="">Купить в один клик</button>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+          </form-tabs>
+          <div class="buy-actions__buttons product-actions">
+            <button class="product-action">
+              <span class="product-action__icon" aria-hidden="true">
+                <svg width="16" height="16">
+                  <use xlink:href="#icon-compare"></use>
+                </svg>
+              </span>
+              <span class="product-action__label">Сравнить</span>
+            </button>
+            <button class="product-action">
+              <span class="product-action__icon" aria-hidden="true">
+                <svg width="16" height="16">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+              </span>
+              <span class="product-action__label">В избранное</span>
+            </button>
+          </div>
+          <a class="buy-actions__order" href="#" hidden>Оформить заказ</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</dialog-element>

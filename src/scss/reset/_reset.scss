@@ -25,6 +25,7 @@
   block-size: 100%;
   font-size: 16px;
   text-size-adjust: 100%;
+  scrollbar-gutter: stable;
 }
 
 :where(:is(button, select):not(:disabled), label) {
@@ -72,7 +73,7 @@
   }
 }
 
-:where(dialog:not([open])) {
+:where(dialog:not([open], :popover-open)) {
   opacity: 0;
   visibility: hidden;
 }
@@ -179,5 +180,13 @@
 }
 
 :where(tabs-element) {
+  display: contents;
+}
+
+:where(dialog-element) {
+  display: contents;
+}
+
+:where(form-tabs) {
   display: contents;
 }

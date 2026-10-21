@@ -5,3 +5,5 @@ import "./scripts/more-button.js";
 import "./scripts/filter-button.js";
 import "./scripts/sort-button.js";
 import "./scripts/tabs-element.js";
+import "./scripts/dialog-element.js";
+import "./scripts/form-tabs.js";

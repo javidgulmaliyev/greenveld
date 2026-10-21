@@ -1,0 +1,46 @@
+@use "../../functions/functions";
+@use "../../mixins/mixins";
+@use "../../variables/variables";
+
+.dialog {
+  z-index: 500;
+  padding: 10px;
+  overflow: auto;
+
+  body:has(&:popover-open) {
+    overflow: hidden;
+  }
+
+  &:not(:popover-open) {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-150%);
+
+    &::backdrop {
+      background-color: rgba($color: variables.$color-141414, $alpha: 0);
+    }
+  }
+
+  &::backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(variables.$color-141414, 0.5);
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: background-color;
+      transition-duration: 0.3s;
+    }
+  }
+
+  // .dialog__inner
+  &__inner {
+    inline-size: 100%;
+    max-inline-size: 768px;
+    margin: auto;
+    padding-block: 0 16px;
+    padding-inline: 16px;
+    background-color: variables.$color-white;
+    border-radius: 16px;
+    border: 0.4px solid variables.$color-e8e8e8;
+  }
+}
