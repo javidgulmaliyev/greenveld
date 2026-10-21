@@ -46,8 +46,16 @@ class DialogElement extends HTMLElement {
       /** @type {{target: HTMLElement}} */
       const { target } = event;
 
+      if (target.closest("[popovertargetaction=\"show\"]")) {
+        this.dialog.hidePopover();
+
+        return;
+      }
+
       if (!target.closest(".dialog__inner")) {
         this.dialog.hidePopover();
+
+        return;
       }
     }, { signal: this.abortController.signal });
   }

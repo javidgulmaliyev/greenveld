@@ -1,0 +1,213 @@
+@use "../../functions/functions";
+@use "../../mixins/mixins";
+@use "../../variables/variables";
+
+.feedback {
+  // .feedback__top
+  &__top {
+    position: sticky;
+    inset-block-start: -11px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-block: 16px;
+    background-color: variables.$color-white;
+  }
+
+  // .feedback__text
+  &__text {
+    font-size: functions.responsive-value(16, 14);
+  }
+
+  // .feedback__close
+  &__close {
+    flex: 0 0 auto;
+    font-size: 0;
+    color: variables.$color-8f8f8f;
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: color;
+      transition-duration: 0.3s;
+    }
+
+    @include mixins.hover {
+      color: variables.$color-hover;
+    }
+  }
+}
+
+.feedback-form {
+  // .feedback-form__text
+  &__text {
+    margin-block-end: 16px;
+    font-size: 14px;
+    color: variables.$color-616161;
+  }
+
+  // .feedback-form__inputs
+  &__inputs {
+    margin-block-end: 16px;
+  }
+
+  // .feedback-form__policy
+  &__policy {
+    margin-block-end: 16px;
+  }
+
+  // .feedback-form__button
+  &__button {
+    --outline-color: #{variables.$color-32b864};
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 100%;
+    min-block-size: 32px;
+    margin-block-start: 16px;
+    padding-block: 5px;
+    padding-inline: 12px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: variables.$color-white;
+    background-color: variables.$color-32b864;
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: background-color;
+      transition-duration: 0.3s;
+    }
+
+    @include mixins.hover {
+      background-color: variables.$color-hover-dark;
+    }
+  }
+}
+
+.feedback-inputs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+
+  // .feedback-inputs__item
+  &__item {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: span 2;
+    align-items: center;
+    justify-items: end;
+
+    &:not(:last-child) {
+      margin-block-end: 8px;
+    }
+  }
+
+  // .feedback-inputs__label
+  &__label {
+    font-size: 14px;
+    color: variables.$color-616161;
+
+    .feedback-inputs__item:has(.feedback-inputs__input:required) & {
+      &::after {
+        content: "*";
+        color: variables.$color-32b864;
+      }
+    }
+  }
+
+  // .feedback-inputs__input
+  &__input {
+    block-size: functions.responsive-value(40, 32);
+    padding-inline: 12px;
+    text-overflow: ellipsis;
+    background-color: variables.$color-white;
+    border: 0.8px solid variables.$color-d6d6d6;
+    border-radius: 100px;
+
+    &::placeholder {
+      color: variables.$color-616161;
+    }
+
+    &:focus-visible {
+      border-color: variables.$color-141414;
+    }
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: border-color;
+      transition-duration: 0.3s;
+    }
+  }
+}
+
+.feedback-policy {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  // .feedback-policy__icon
+  &__icon {
+    position: relative;
+    isolation: isolate;
+    flex: 0 0 auto;
+    inline-size: 14px;
+    aspect-ratio: 1 / 1;
+    font-size: 0;
+    color: rgba($color: variables.$color-b3b3b3, $alpha: 0);
+    border: 1.4px solid variables.$color-b3b3b3;
+    border-radius: 2px;
+    overflow: hidden;
+
+    .feedback-policy:has(.feedback-policy__input:checked) & {
+      color: variables.$color-32b864;
+      border-color: variables.$color-32b864;
+    }
+
+    svg {
+      position: absolute;
+      inset-block-start: 50%;
+      inset-inline-start: 50%;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // .feedback-policy__text
+  &__text {
+    font-size: 14px;
+  }
+
+  // .feedback-policy__label
+  &__label {
+    display: inline;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  // .feedback-policy__link
+  &__link {
+    position: relative;
+    z-index: 1;
+    display: inline;
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: color;
+      transition-duration: 0.3s;
+    }
+
+    @include mixins.hover {
+      color: variables.$color-hover;
+    }
+  }
+
+  // .feedback-policy__input
+  &__input {
+  }
+}

@@ -1,0 +1,40 @@
+<dialog-element>
+  <dialog class="dialog" id="dialog-feedback" popover>
+    <div class="dialog__inner feedback">
+      <div class="feedback__top">
+        <div class="feedback__text">Купить в один клик</div>
+        <button class="feedback__close" popovertarget="dialog-feedback" popovertargetaction="hide" aria-label="Закрыть модальное окно">
+          <svg width="20" height="20" aria-hidden="true">
+            <use xlink:href="#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <form class="feedback-form" id="form-feedback" action="#">
+        <p class="feedback-form__text">Заполните, пожалуйста, форму и наш менеджер свяжется с вами для подтверждения заказа.</p>
+        <div class="feedback-form__inputs feedback-inputs">
+          <div class="feedback-inputs__item">
+            <label class="feedback-inputs__label" for="feedback-inputs-name">Имя</label>
+            <input class="feedback-inputs__input" id="feedback-inputs-name" name="feedback-inputs-name" type="text" inputmode="text" required>
+          </div>
+          <div class="feedback-inputs__item">
+            <label class="feedback-inputs__label" for="feedback-inputs-tel">Телефон</label>
+            <input class="feedback-inputs__input" id="feedback-inputs-tel" name="feedback-inputs-tel" type="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required>
+          </div>
+        </div>
+        <div class="feedback-form__policy feedback-policy">
+          <div class="feedback-policy__icon" aria-hidden="true">
+            <svg width="14" height="14">
+              <use xlink:href="#icon-check"></use>
+            </svg>
+          </div>
+          <div class="feedback-policy__text">
+            <label class="feedback-policy__label" for="feedback-policy">Я даю согласие на обработку моих персональных данных в соответствии с</label>&#32;
+            <a class="feedback-policy__link" href="#" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a>
+          </div>
+          <input class="feedback-policy__input visually-hidden" id="feedback-policy" name="feedback-policy" type="checkbox">
+        </div>
+        <button class="feedback-form__button" type="submit">Купить</button>
+      </form>
+    </div>
+  </dialog>
+</dialog-element>
