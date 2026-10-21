@@ -83,8 +83,9 @@
     margin-block-end: 16px;
   }
 
-  // .buy__actions
-  &__actions {
+  // .buy__cart
+  &__cart {
+    margin-block-start: 16px;
   }
 }
 
@@ -436,6 +437,62 @@
 
     img {
       object-fit: contain;
+    }
+  }
+}
+
+.buy-cart {
+  // .buy-cart__label
+  &__label {
+    margin-block-end: 4px;
+    font-weight: 600;
+    font-size: functions.responsive-value(16, 14);
+  }
+
+  // .buy-cart__list
+  &__list {
+  }
+
+  // .buy-cart__item
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    &:not(:last-child) {
+      margin-block-end: 4px;
+    }
+  }
+
+  // .buy-cart__remove
+  &__remove {
+    flex: 0 0 auto;
+    font-size: 0;
+    color: variables.$color-8f8f8f;
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: color;
+      transition-duration: 0.3s;
+    }
+
+    @include mixins.hover {
+      color: variables.$color-hover;
+    }
+  }
+
+  // .buy-cart__link
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    color: variables.$color-616161;
+
+    @include mixins.prefers-reduced-motion {
+      transition-property: color;
+      transition-duration: 0.3s;
+    }
+
+    @include mixins.hover {
+      color: variables.$color-hover;
     }
   }
 }
